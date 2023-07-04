@@ -21,4 +21,4 @@ c4= random.choice(hiragana)
 d4= random.choice(hiragana)
 
 moji4.notes_create(text=a4+b4+c4+d4)
-print(a4+b4+c4+d4+“\n”)
+print(a4+b4+c4+d4+'\n')
