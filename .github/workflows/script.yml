@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Retry command
+        uses: corrupt952/actions-retry-command@v1.0.7
       - name: Set up Python 3.10
         uses: actions/setup-python@v3
         with:
