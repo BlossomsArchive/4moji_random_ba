@@ -4,6 +4,7 @@ from misskey import Misskey
 
 import random
 import os
+import time
 
 misskey_address = os.environ.get("MISSKEY_SERVER_ADDRESS")
 misskey_token = os.environ.get("MISSKEY_TOKEN")
