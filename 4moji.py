@@ -23,6 +23,7 @@ try:
   moji4.notes_create(text=a4+b4+c4+d4)
 except:
   time.sleep(30)
+  print('リトライ\n')
   a4= random.choice(hiragana)
   b4= random.choice(hiragana)
   c4= random.choice(hiragana)
