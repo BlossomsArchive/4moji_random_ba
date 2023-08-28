@@ -22,5 +22,7 @@ jobs:
         env:
           MISSKEY_SERVER_ADDRESS: ${{ secrets.MISSKEY_SERVER_ADDRESS }}
           MISSKEY_TOKEN: ${{ secrets.MISSKEY_TOKEN }}
+          MISSKEY_SERVER_ADDRESS_2: ${{ secrets.MISSKEY_SERVER_ADDRESS_2 }}
+          MISSKEY_TOKEN_2: ${{ secrets.MISSKEY_TOKEN_2 }}
         run: |
           python 4moji.py
