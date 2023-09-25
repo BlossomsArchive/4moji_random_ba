@@ -19,6 +19,12 @@ a4 = random.choice(hiragana)
 b4 = random.choice(hiragana)
 c4 = random.choice(hiragana)
 d4 = random.choice(hiragana)
-moji4.notes_create(text=a4 + b4 + c4 + d4)
-
+while True:
+    try:
+        moji4.notes_create(text=a4 + b4 + c4 + d4)
+    except:
+        time.sleep(300)
+    else:
+        break
+    
 print(a4+b4+c4+d4+'\n')
