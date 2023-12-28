@@ -18,8 +18,7 @@ while True:
     try:
         misskey_address = os.environ.get("MISSKEY_SERVER_ADDRESS")
         misskey_token = os.environ.get("MISSKEY_TOKEN")
-        moji4 = Misskey(misskey_address)
-        moji4.token = misskey_token
+        moji4 = Misskey(misskey_address,misskey_token)
         moji4.notes_create(text=post_text)
     except:
         time.sleep(300)
